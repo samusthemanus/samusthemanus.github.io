@@ -15,46 +15,77 @@
 </head>
 
 <body>
+  <div class="top">
+    Sam Otten
+  </div>
   <section class="site">
-      <div class="card">
-        <div class="card-title">
-          Hello.
-        </div><hr>
-        <div class="card-body">
-          Let me introduce myself.
-        </div>
-      </div>
+    <div class="about">
       <div class="card">
           <div class="card-title">
-            Intro.
+            Hello.
           </div><hr>
           <div class="card-body">
             Whatever intro you want to put here.
           </div>
         </div>
+      </div>
+
+      <div class="portfolio">
+          <div class="card">
+              <div class="card-title">
+                'Folio.
+              </div><hr>
+              <div class="card-body">
+                Links to Google Drive, other material...
+              </div>
+            </div>
+        </div>
+        
+        <div class="shows">
+            <div class="card">
+                <div class="card-title">
+                  Shows.
+                </div><hr>
+                <div class="card-body">
+                  List of shows and their locations.
+                </div>
+              </div>
+          </div>
+
+          <div class="contact">
+              <div class="card">
+                  <div class="card-title">
+                    Contact
+                  </div><hr>
+                  <div class="card-body">
+                    Email and what other options you would like to provide.
+                  </div>
+                </div>
+            </div>
       
       <nav class="item nav">
           <div class="nav-item">
-              <i class="far fa-lg fa-user"></i>
-              <a class="nav-link" href="#">About</a>
+              <i onclick="switchToAbout()" class="far fa-lg fa-user"></i>
+              <a class="nav-link" onclick="switchToAbout()" href="javascript:void(0)">About</a>
           </div> 
     
           <div class="nav-item">
-              <i class="fas fa-lg fa-camera-retro"></i>
-              <a class="nav-link" href="#">Portfolio</a>
+              <i onclick="switchToPortfolio()" class="fas fa-lg fa-camera-retro"></i>
+              <a class="nav-link" onclick="switchToPortfolio()" href="javascript:void(0)">Portfolio</a>
           </div> 
     
           <div class="nav-item">
-              <i class="fas fa-lg fa-film"></i>
-              <a class="nav-link" href="#">Shows</a>
+              <i onclick="switchToShows()" class="fas fa-lg fa-film"></i>
+              <a class="nav-link" onclick="switchToShows()" href="#">Shows</a>
           </div> 
     
           <div class="nav-item">
-              <i class="far fa-lg fa-envelope"></i>
-              <a class="nav-link" href="#">Contact</a>
+              <i onclick="switchToContact()" class="far fa-lg fa-envelope"></i>
+              <a class="nav-link" onclick="switchToContact()" href="#">Contact</a>
           </div> 
         </nav>
       </section>
+      <script src="script.js"></script>
   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
 </body>
 
