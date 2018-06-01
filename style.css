@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+
+body {
+    background-image: url("trianglify.svg");
+    background-color: #cccccc;
+ }
+
+ .nav-icon {
+    margin: auto; 
+    /* padding: 23px; */
+    font-size: 14px;
+ }
+
+ .nav-item {
+    margin-top: 18%;
+ }
+
+ .card {
+     border-radius: 15px 0 15px 0;
+     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
+     background-color: white;
+     width: 85%;
+     margin: auto;
+     margin-top: 5%;
+     border-top: 1px solid rgba(160,160,160,0.2);
+     height: 200px;
+     padding: 25px;
+ }
+
+ .card-title {
+     font-family: 'Bowlby One SC', cursive;
+     text-transform: uppercase;
+     color: red;
+     font-size: 48px;
+     line-height: 3rem;
+ }
+
+.card-body {
+    color: rgb(255, 139, 86);
+    font-size: 36px;
+    line-height: 3rem;
+    word-wrap: break-word;
+    font-weight: bolder;
+}
+
+ .nav a {
+    text-decoration: none;
+    margin: auto;
+    color: lightgray;
+    /* padding: 23px; */
+    font-size: 12px;
+  }
+  
+  .nav a:hover {
+    color: black;
+  }
+  
+  .nav a:active {
+    color:red;
+  }
+  
+  .item {
+    font-size: 24px;
+    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: 100px auto 100px;
+    grid-template-rows: 50px 100px 100px;
+    grid-auto-rows: 50px;
+    grid-auto-columns: 45px;
+    grid-gap: 5px;
+  }
+  
+  .nav {
+    display: grid;
+    
+    grid-template-columns: repeat(4, 60px);
+    grid-template-rows: 50px 100px 100px;
+    grid-gap: 40px;
+    bottom: 0;
+    left: 0;
+    height: 70px;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f3f3f3+50,ededed+51,ffffff+100;White+Gloss+%232 */
+    background: #ffffff; /* Old browsers */
+    /* background: -moz-linear-gradient(top, #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff 100%); /* FF3.6-15 */
+    /*background: -webkit-linear-gradient(top, #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+    /*background: linear-gradient(to bottom, #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
+    border-top: 1px solid whitesmoke;
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    /*grid-row: span 2;*/
+  }
