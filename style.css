@@ -5,6 +5,12 @@ html {
     text-align: center;
 }
 
+body {
+    background-image: url("trianglify.svg");
+    background-color: #cccccc;
+    overflow: auto;
+ }
+
 a {
     text-decoration: none;
 }
