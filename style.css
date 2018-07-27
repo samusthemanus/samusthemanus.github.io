@@ -1,146 +1,54 @@
-@import url('https://fonts.googleapis.com/css?family=Bowlby+One+SC');
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
-body {
-    background-image: url("trianglify.svg");
-    background-color: #cccccc;
-    overflow: auto;
- }
-
- .about {
-     display: initial;
-     transition: visibility .3s, opacity 0.5s linear;
- }
-
- .portfolio {
-     display: none;
-     transition: visibility .3s, opacity 0.5s linear;
- }
-
- .shows {
-     display: none;
- }
-
- .contact {
-     display: none;
- }
-
- 
-
- .nav-icon {
-    margin: auto; 
-    /* padding: 23px; */
-    font-size: 14px;
- }
-
- .nav-item {
-    margin-top: 18%;
- }
-
- .card {
-     border-radius: 15px 0 15px 0;
-     box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
-     background-color: white;
-     width: 80%;
-     max-width: 80%;
-     margin: auto;
-     margin-top: 5%;
-     border-top: 1px solid rgba(160,160,160,0.2);
-     min-height: 37vh;
-     padding: 25px;
- }
-
- .card-title {
-     font-family: 'Bowlby One SC', cursive;
-     text-transform: uppercase;
-     color: red;
-     font-size: 46px;
-     word-wrap: break-word;
-     line-height: 3rem;
- }
-
-.card-body {
-    color:#4d413c;
-    font-size: 36px;
-    line-height: 3rem;
-    word-wrap: break-word;
-    font-weight: bolder;
+html {
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
 }
 
- .nav a {
+a {
     text-decoration: none;
-    margin: auto;
-    color: lightgray;
-    /* padding: 23px; */
-    font-size: 12px;
-  }
-  
-  .nav a:hover {
-    color: black;
-  }
-  
-  .nav a:active {
-    color:red;
-  }
-  
-  .item {
-    font-size: 24px;
-    box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2);
+}
+
+.item {
+    border: 1px solid lightblue;
     font-weight: bold;
     text-align: center;
+    padding: 15px;
   }
 
-  .site {
-      display: grid;
-      grid-column: span 2;
+  .item a {
+    color: lightseagreen;
   }
 
-  .container {
-    display: grid;
-    grid-template-columns: 100px auto 100px;
-    grid-template-rows: 50px 100px 100px;
-    grid-auto-rows: 50px;
-    grid-auto-columns: 45px;
-    grid-gap: 5px;
+  .item:hover {
+      background-color: gainsboro;
   }
 
-  .top {
-      position: fixed;
-      top: 0;
-      left: 0;
-      height: 15px;
-      z-index: 10;
-      width: 100%;
-      margin: .5%;
-      font-size: 13px;
-      text-align: center;
-      color: black;
-      /* box-shadow: 0px 4px 8px 0px rgba(0,0,0,0.2); */
-  }
-  
-  .nav {
-    display: grid;
-    
-    grid-template-columns: repeat(4, 60px);
-    grid-template-rows: 50px 100px 100px;
-    grid-gap: 25px;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(6, auto);
+  grid-auto-rows: 50px;
+  grid-auto-columns: 45px;
+  grid-gap: 5px;
+}
+
+.container {
+    top: 5%;
+    position: absolute;
+    left: 25%;
+    right: 0;
     bottom: 0;
-    left: 0;
-    height: 70px;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f3f3f3+50,ededed+51,ffffff+100;White+Gloss+%232 */
-    background: #ffffff; /* Old browsers */
-    /* background: -moz-linear-gradient(top, #ffffff 0%, #f3f3f3 50%, #ededed 51%, #ffffff 100%); /* FF3.6-15 */
-    /*background: -webkit-linear-gradient(top, #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
-    /*background: linear-gradient(to bottom, #ffffff 0%,#f3f3f3 50%,#ededed 51%,#ffffff 100%); W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-9 */
-    border-top: 1px solid whitesmoke;
-    width: 100%;
-    position: fixed;
-    z-index: 10;
-    /*grid-row: span 2;*/
-  }
+    max-width: 50%;
+}
 
-  @media (orientation: landscape) {
-      .nav {
-          grid-gap: 22%;
-      }
-  }
+@media (max-width: 500px) and (orientation : portrait) {
+    .grid-container {
+        grid-template-columns: repeat(2, auto);
+    }
+    .container {
+        top: 1%;
+        left: 20%;
+        max-width: 60%;
+    }
+}
